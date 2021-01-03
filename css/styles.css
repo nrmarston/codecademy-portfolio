@@ -1,3 +1,42 @@
+body {
+  margin: 0;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  grid-template-areas: "sidebar hero"
+             "sidebar portfolio"
+             "sidebar contact";
+}
+
+#sidebar {
+  grid-area: sidebar;
+  background-color: blanchedalmond;
+}
+
+#hero-container {
+  height: 100%;
+  width: 100%;
+  grid-area: hero;
+  height: 60vh;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+}
+
+#portfolio {
+  height: 100%;
+  width: 100%;
+  grid-area: portfolio;
+  background-color: salmon;
+}
+
+#contact {
+  grid-area: contact;
+  background-color: mediumaquamarine;
+}
+
 img {
   height: 250px;
 }
