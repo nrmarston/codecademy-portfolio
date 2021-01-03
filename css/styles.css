@@ -18,6 +18,10 @@ nav {
 #sidebar {
   grid-area: sidebar;
   background-color: blanchedalmond;
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 4%;
 }
 
 #hero-container {
@@ -26,16 +30,24 @@ nav {
   align-items: center;
   justify-content: center;
   background-color: pink;
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
 
 #portfolio {
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   grid-area: portfolio;
   background-color: salmon;
 }
 
 #contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   grid-area: contact;
   background-color: mediumaquamarine;
