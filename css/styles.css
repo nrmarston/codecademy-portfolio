@@ -2,8 +2,13 @@ body {
   margin: 0;
 }
 
+nav {
+  
+}
+
 #container {
   display: grid;
+  height: 100vh;
   grid-template-columns: 0.5fr 2fr;
   grid-template-areas: "sidebar hero"
              "sidebar portfolio"
@@ -16,28 +21,31 @@ body {
 }
 
 #hero-container {
-  height: 100%;
-  width: 100%;
   grid-area: hero;
-  height: 60vh;
+  height: 100vh;
   align-items: center;
   justify-content: center;
   background-color: pink;
 }
 
 #portfolio {
-  height: 100%;
-  width: 100%;
+  display: flex;
+  height: 100vh;
   grid-area: portfolio;
   background-color: salmon;
 }
 
 #contact {
+  height: 100vh;
   grid-area: contact;
   background-color: mediumaquamarine;
 }
 
 img {
   height: 250px;
+}
+
+h2 {
+  margin: 0;
 }
 
