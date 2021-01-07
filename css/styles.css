@@ -1,5 +1,64 @@
-section.hero {
+body {
+  margin: 0;
+}
+
+header {
+
+}
+
+ul>li{
+  list-style-type: none;
+}
+
+section {
+  margin-bottom: 0;
+}
+
+.container {
   display: grid;
-  height: 100vh;
+  position: relative;
+  margin: auto;
+  max-width: 1100px;
+  grid-template-areas: "head head"
+                       "hero hero"
+                       "portfolio portfolio"
+                       "contact contact"
+                       "footer footer";
+  grid-template-rows: 10% 1fr 1fr 1fr 0.5fr;
+  grid-template-columns: 20% 80%;
+  /* grid-gap: 1.1rem; */
+}
+
+.navbar {
+  background-color: pink;
+  grid-area: head;
+}
+
+.hero {
+  background-color:sandybrown;
+  grid-area: hero;
+  text-align: center;
+}
+
+.portfolio {
+  background-color: seagreen;
+  grid-area: portfolio;
+}
+
+.contact {
+  background-color: steelblue;
+  grid-area: contact;
+}
+
+.item-one {
   background-color: sandybrown;
+}
+
+.item-two {
+  background-color: seagreen;
+}
+
+footer {
+  grid-area: footer;
+  background-color: powderblue;
 }
