@@ -6,8 +6,11 @@ header {
 
 }
 
-ul>li{
+li {
   list-style-type: none;
+  display: inline;
+  float: left;
+  padding-left: 5px;
 }
 
 section {
@@ -27,6 +30,12 @@ section {
   grid-template-rows: 10% 1fr 1fr 1fr 0.5fr;
   grid-template-columns: 20% 80%;
   /* grid-gap: 1.1rem; */
+}
+
+.flex-container {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
